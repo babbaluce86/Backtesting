@@ -138,7 +138,7 @@ class Indicator(object):
             avgGain = up.ewm(span = ema, adjust = True).mean()
             avgLoss = down.ewm(span = ema, adjust = True).mean()
             
-        rs = avgGain.div(avgLoss)
+        rs = abs(avgGain.div(avgLoss))
         rsi = 100.0 - (100.0 / (1 + rs))
         
         data['RSI'] = rsi
