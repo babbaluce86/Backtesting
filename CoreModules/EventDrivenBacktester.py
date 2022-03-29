@@ -7,8 +7,8 @@ from binance.client import Client
 plt.style.use("seaborn")
 
 
-api_key = "82358fba3ec8bf87816d4f5590460d4001824e7ced03fc54d3ac4628919964be"
-secret_key = "40943bfd8deaf625a753cf46a857546cf53c16f58ac1e907a94476a73da0595c"
+api_key = "your_api_key"
+secret_key = "your_secret_key"
 
 client = Client(api_key = api_key, 
                 api_secret = secret_key, 
